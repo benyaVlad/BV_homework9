@@ -1,0 +1,52 @@
+.container-2 {
+    min-height: 716px;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/phone.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.container-2_content{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:27px;
+    margin-left: 11%;
+}
+.container-2_content a {
+    color: #00ADEE;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+}
+.container-2_background{
+    display: none;
+}
+
+@media (max-width:720px){
+    .container-2{
+        flex-direction: column;
+        background-image: none;
+    }
+    .container-2_content{
+        margin-left:3%;
+        margin-right:3%;
+        max-height:427px;
+        width:90%;
+        align-items: center;
+        margin-top: 62px;
+    }
+    .container-2_content p{
+        text-align: center;
+    }
+    .container-2_background{
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        width: 100%;
+    }
+    .backphone{
+        width: 100%;
+    }
+}

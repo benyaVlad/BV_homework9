@@ -1,0 +1,124 @@
+.container-4{
+    min-height:431px;
+    overflow: hidden;
+
+}
+.container-4_heading{
+    display: flex;
+    justify-content: center;
+    margin:62px auto;
+}
+.container-4_content{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    gap: 3%;
+}
+.user_comment {
+    width: 21.5%;
+    height: 161px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.user_comment_head{
+    height: 35px;
+    width:90%;
+    margin: 10px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.user_comment_head_sign{
+    display: flex;
+    align-items: center;
+    gap:5%;
+    width: 60%;
+}
+.user_comment_head_sign p{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+.user_comment_content{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+
+}
+.user_comment_content p{
+    font-size: 14px;
+    line-height: 18px;
+}
+.first_comment{
+    margin-left: -10%;
+    opacity: 0.5;
+}
+.last_comment{
+    margin-right: -10%;
+    opacity: 0.5;
+}
+.point{
+    display: flex;
+    justify-content: center;
+    gap:1%;
+    margin:47px auto 0 auto;
+
+}
+.point div {
+    width: 0.74%;
+    height: 11px;
+    border-radius: 50%;
+
+}
+.arrow_btn{
+    position: absolute;
+    align-self: center;
+    z-index: 2;
+    box-sizing: border-box;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow_left{
+    left: 7%;
+}
+.arrow_left:hover{
+    transform: scale(1.2);
+}
+.arrow_right{
+    right: 7%;
+}
+.arrow_right:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width:720px){
+    .user_comment{
+        display: none;
+
+    }
+    .container-4_content{
+        justify-content: center;
+    }
+    .user_comment_mobile{
+        display: block;
+        min-height: 175px;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+    .arrow_right{
+        right:0.5%;
+    }
+    .arrow_left{
+        display: none;
+    }
+}
